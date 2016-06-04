@@ -7,6 +7,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ProductCatalogServiceHost",
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ProductCatalogService", "src\ProductCatalogService\ProductCatalogService.xproj", "{262C0999-BA43-4BA6-9BC5-AE2CC8C33AEA}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PriceServiceHost", "src\PriceServiceHost\PriceServiceHost.xproj", "{3BE9CACF-31D1-4FEE-AD01-C1154F9C99EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{262C0999-BA43-4BA6-9BC5-AE2CC8C33AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{262C0999-BA43-4BA6-9BC5-AE2CC8C33AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{262C0999-BA43-4BA6-9BC5-AE2CC8C33AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BE9CACF-31D1-4FEE-AD01-C1154F9C99EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BE9CACF-31D1-4FEE-AD01-C1154F9C99EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BE9CACF-31D1-4FEE-AD01-C1154F9C99EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BE9CACF-31D1-4FEE-AD01-C1154F9C99EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
