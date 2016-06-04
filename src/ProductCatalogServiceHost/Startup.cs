@@ -4,7 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using ProductCatalogService;
 using SharedServices.DataAccess;
+using SharedServices.DataAccess.Contracts;
+using SharedServices.DataAccess.Repositories;
 
 namespace ProductCatalogServiceHost
 {
@@ -30,6 +33,10 @@ namespace ProductCatalogServiceHost
             services.AddMvc();
             var connection = @"Server=(localdb)\mssqllocaldb;Database=ShoppersDb;Trusted_Connection=True;";
             services.AddDbContext<SharedServices.DataAccess.AppDatabaseContext>(options => options.UseSqlServer(connection));
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IPriceRepository, PriceRepository>();
+            services.AddTransient<IProductCatalogService, ProductCatalogService.ProductCatalogService>();
+            services.AddSingleton<IServiceUnitOfWork, ServiceUnitOfWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
