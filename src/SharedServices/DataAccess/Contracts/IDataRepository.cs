@@ -1,4 +1,4 @@
-﻿namespace Shoppers.Core.DataAccess.Contracts
+﻿namespace SharedServices.DataAccess.Contracts
 {
     using System.Linq;
     using System.Threading.Tasks;
